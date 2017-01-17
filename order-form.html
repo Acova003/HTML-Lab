@@ -38,24 +38,41 @@
 
     <p>Place your orders here! You know you want to.</p>
 
-    <form>
+    <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
+
     <p>First Name <input type="text" name= "First Name" placeholder="Your First Name"></p>
     <p>Last Name <input type="text" name= "First Name" placeholder="Your Last Name"></p>
-    <form>Melon Type <select name= "melontype">
+    
+    Melon Type <select name= "melontype">
     <option value="watermelon">Watermelon</option>
     <option value="Honeydew">Honeydew</option>
     <option value="Canteloupe">Canteloupe</option>
     <option value="Crenshaw">Crenshaw</option>
     <option value="Canary">Canary</option>
     </select>
-    </form>
-    <p>Quantity <input type="number" name="quantity" placeholder="This has to be a number">
-    <form>Delivery Time
-        <input type="checkbox" name="time" value="12am-12pm">12am-12pm
-        <input type="checkbox" name="time" value="12pm-12am">12pm-12am
-        <input type="checkbox" name="time" value="Time is an illusion">Time is am illusion
+    
+    <p>Quantity <input type="number" name="quantity" placeholder="This has to be a number"></p>
 
-    </form>
+    <p>Delivery Time
+        <input type="checkbox" name="time" value="am">12am-12pm
+        <input type="checkbox" name="time" value="pm">12pm-12am
+        <input type="checkbox" name="time" value="wat">Time is am illusion
+    </p>
+    <p>
+            Returning Customer?
+            <input type="radio" name="yes" value="yes">Yes
+            <input type="radio" name="no" value="No">No
+    </p>
+    <p>Statistics
+        <input type="checkbox" name="stats" value="Dog">Dog
+        <input type="checkbox" name="stats" value="Cat">Cat
+        <input type="checkbox" name="stats" value="Hedgehog">Hedgehog
+        <input type="checkbox" name="stats" value="Balloonicorn">Balloonicorn
+    </p>
+    
+            <input type="submit">
+        </form>
+
     </form>
     </body>
         
